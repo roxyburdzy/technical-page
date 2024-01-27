@@ -8,52 +8,87 @@
 <body>
   <main id="main-doc">
     <h1>CSS Opacity and Mask-Image</h1>
+    
     <section id="Opacity_description_and_Mask-Image" class="main-section">
       <header>Opacity description and Mask-Image</header>
-      <p></p>
-      <p></p>
-      <code></code>
-    </section>
+
+      <p>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.</p>
+      </section>
+
     <section id="Transparent_image" class="main-section">
       <header>Transparent image</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
-      <li></li>
+      <p>The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent:
+</p>
+      
+      <code class="code-box">img {
+        <br>
+        &emsp;opacity: 0.5;
+        <br>
+      }</code>
+      <br>
+      <div  class="image-box"><img src="transparent-image.png"></div>
+     
     </section>
     <section id="Transparent_box" class="main-section">
       <header>Transparent box</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read:</p>
+      <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+      <code class="code-box">div {
+        <br>
+        &emsp;opacity: 0.3;
+        <br>
+      }</code>
+      <br>
+      <div class="image-box"><img src="transparent-box.png"></div>
     </section>
     <section id="Transparent_hover" class="main-section">
       <header>Transparent hover</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
-      <li></li>
+      <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+      <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-ove</p>
+      <code class="code-box">img {
+        <br>
+        &emsp;opacity: 0.5;
+        <br>
+      }
+      <br>
+      img:hover {
+        <br>
+        &emsp;opacity: 1.0;
+        <br>
+      }</code>
+      <br>
+      <div class="image-box"><img src="transparent-hover-crop.png"></div>
+     
     </section>
     <section id="Radial_gradient" class="main-section">
       <header>Radial gradient</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
-      <li></li>
+      <p>CSS functions are used as a value for various CSS properties.</p>
+      <p>A radial gradient with evenly spaced color stops:</p>
+      <code class="code-box">#grad {<br>
+        &emsp;background-image: radial-gradient(red, green, blue);
+        <br>
+      }</code>
+      <br>
+      <div class="image-box"><img id="radial-img"src="radial-gradient.png"></div>
+      
     </section>
+
+    <section id="Reference" class="main-section">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+</main>
     <nav id="navbar">
-      <header>text that describes the topic of the technical documentation</header>
-      <a class="nav-link" href="#Opacity_description_and_Mask-Image">Opacity description and Mask-Image</a>
-      <a class="nav-link" href="#Transparent_image">Transparent image</a>
-      <a class="nav-link" href="#Transparent_box">Transparent box</a>
-      <a class="nav-link" href="#Transparent_hover">Transparent hover</a>
-      <a class="nav-link" href="#Radial_gradient">Radial gradient</a>
+      <header id="head">CSS Opacity and Mask-Image</header>
+      <ul>
+      <li><a class="nav-link" href="#Opacity_description_and_Mask-Image">Opacity description and Mask-Image</a></li>
+      <li><a class="nav-link" href="#Transparent_image">Transparent image</a></li>
+      <li><a class="nav-link" href="#Transparent_box">Transparent box</a></li>
+      <li><a class="nav-link" href="#Transparent_hover">Transparent hover</a></li>
+      <li><a class="nav-link" href="#Radial_gradient">Radial gradient</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
     </nav>
-  </main>
+ 
 </body>
 
 </html
