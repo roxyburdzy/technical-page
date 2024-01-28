@@ -76,6 +76,7 @@ li {
   border-bottom: solid;
   color: black;
   font-size: 30px;
+  padding:12px;
 }
 
 .nav-link {
